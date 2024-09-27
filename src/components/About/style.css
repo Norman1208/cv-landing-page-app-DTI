@@ -1,0 +1,29 @@
+@font-face {
+    font-family: NeauMontreal;
+    src: url('../../assets/fonts/neue-montreal/NeueMontreal-Regular.otf');
+}
+
+.about {
+    display: flex;
+    width: calc(100% - 160px);
+    padding: 80px;
+}
+
+.left {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-basis: 30%;
+}
+
+.right {
+    width: 839px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Neue Montreal';
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37.8px;
+    text-align: left;
+}
