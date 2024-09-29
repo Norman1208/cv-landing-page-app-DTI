@@ -24,30 +24,34 @@ const Index: FC = () => {
         {src: gallery7},
     ];
     return (
-        <div className="flex flex-col justify-center items-center h-[50vh]">
-            <div className="relative w-[80%] overflow-hidden">
+        <div className="flex flex-col justify-center items-center h-[90vh] gap-10">
+            <div className="relative w-[100%] overflow-hidden">
                 {/* scrollable container */}
                 <div className="flex space-x-4 overflow-x-scroll scrollbar-hide">
                     {images1.map((image, index) => (
                         <div 
                             key={index}
-                            className="min-w-[300px] max-w-[300px] rounded-md"
-                        >
-                            <img src={image.src} alt={`image-${index+1}`} className="w-full h-full object-cover" />
+                            className=" w-[444px] h-[444px] bg-[#C7D0D9] rounded pl-10"
+                        > {/* min-w-[300px] max-w-[300px] rounded-md*/}
+                            <div className="flex justify-center items-center w-[348px] h-[300px]">
+                                <img src={image.src} alt={`image-${index+1}`} className="w-full h-full object-contain" />
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
 
-            <div className="relative w-[80%] overflow-hidden">
+            <div className="relative w-[100%] overflow-hidden">
                 {/* scrollable container */}
                 <div className="flex space-x-4 overflow-x-scroll scrollbar-hide">
                     {images2.map((image, index) => (
                         <div 
                             key={index}
-                            className="min-w-[300px] max-w-[300px] rounded-md"
+                            className=" w-[444px] h-[444px] bg-[#C7D0D9] rounded pl-10"
                         >
-                            <img src={image.src} alt={`image-${index+1}`} className="w-full h-full object-cover" />
+                            <div className="flex justify-center items-center w-[348px] h-[300px]">
+                                <img src={image.src} alt={`image-${index+1}`} className="w-full h-full object-cover" />
+                            </div>
                         </div>
                     ))}
                 </div>
