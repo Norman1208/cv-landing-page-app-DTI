@@ -1,10 +1,15 @@
 import { FC } from "react";
+import Header from "../../components/Header";
+import BiodataForm from "../../components/BiodataForm";
+import ContactFooter from "../../components/ContactFooter";
 
 const ContactUs: FC = () => {
     return (
-        <div>
-            Contact Us (Not Implemented, Yet at least)
-        </div>
+        <>
+            <Header />
+            <BiodataForm />
+            <ContactFooter />
+        </>
     );
 }
 

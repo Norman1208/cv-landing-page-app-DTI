@@ -1,22 +1,55 @@
 import { FC } from "react";
+import gallery1 from '../../assets/imgs/gallery1.svg';
+import gallery2 from '../../assets/imgs/gallery2.svg';
+import gallery3 from '../../assets/imgs/gallery3.svg';
+import gallery4 from '../../assets/imgs/gallery4.svg';
+import gallery5 from '../../assets/imgs/gallery5.svg';
+import gallery6 from '../../assets/imgs/gallery6.svg';
+import gallery7 from '../../assets/imgs/gallery7.svg';
 
 
 const Index: FC = () => {
-    return (
-        <div className="gallery">
-            <div className="top">
-                <div className="cards">
-                    <div className="work-card">
 
-                    </div>
+    const images1 = [
+        {src: gallery1},
+        {src: gallery2},
+        {src: gallery3},
+        {src: gallery4},
+    ];
+
+    const images2 = [
+        {src: gallery5},
+        {src: gallery6},
+        {src: gallery4},
+        {src: gallery7},
+    ];
+    return (
+        <div className="flex flex-col justify-center items-center h-[50vh]">
+            <div className="relative w-[80%] overflow-hidden">
+                {/* scrollable container */}
+                <div className="flex space-x-4 overflow-x-scroll scrollbar-hide">
+                    {images1.map((image, index) => (
+                        <div 
+                            key={index}
+                            className="min-w-[300px] max-w-[300px] rounded-md"
+                        >
+                            <img src={image.src} alt={`image-${index+1}`} className="w-full h-full object-cover" />
+                        </div>
+                    ))}
                 </div>
             </div>
 
-            <div className="bottom">
-                <div className="cards">
-                    <div className="work-card">
-                        
-                    </div>
+            <div className="relative w-[80%] overflow-hidden">
+                {/* scrollable container */}
+                <div className="flex space-x-4 overflow-x-scroll scrollbar-hide">
+                    {images2.map((image, index) => (
+                        <div 
+                            key={index}
+                            className="min-w-[300px] max-w-[300px] rounded-md"
+                        >
+                            <img src={image.src} alt={`image-${index+1}`} className="w-full h-full object-cover" />
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

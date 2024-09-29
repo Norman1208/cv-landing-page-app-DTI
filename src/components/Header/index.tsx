@@ -11,7 +11,7 @@ const Index: FC = () => {
                 <div className='flex gap-10'>
                   <NavLink href="/public" text="About" />
                   <NavLink href="#work" text="Work" />
-                  <NavLink href="/ContactUs" text="Contact" />
+                  <NavLink href="/contact" text="Contact" />
                 </div>
               </nav>
             </header>
