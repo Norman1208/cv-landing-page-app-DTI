@@ -18,7 +18,7 @@ const Project: FC<Project> = ({name, roles, link}) => {
             </div>
             <div className="project-link">
                 <a href={link} target="_blank" rel="noreferrer">
-                    <img src={DiagonalArrow} alt="arrow" />
+                    <img src={DiagonalArrow} alt="arrow" className="hover:bg-black" />
                 </a>
             </div>
         </div>

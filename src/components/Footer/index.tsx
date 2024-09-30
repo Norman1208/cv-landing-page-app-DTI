@@ -22,10 +22,10 @@ const Footer: FC= () => {
                     <button className="bg-white text-black rounded-full w-[190px] h-[70px] hover:text-bold">Get in touch</button>
                 </div>
                 <div className="flex gap-[32px] text-gray-400">
-                    <a href="https://www.linkedin.com/in/ayush-barnwal/">Linkedin</a>
-                    <a href="https://twitter.com">Twitter</a>
-                    <a href="https://www.instagram.com">Instagram</a>
-                    <a href="https://www.webflow.com">Webflow</a>
+                    <a href="https://www.linkedin.com/in/ayush-barnwal/" className="hover:text-white hover:text-bold">Linkedin</a>
+                    <a href="https://twitter.com" className="hover:text-white hover:text-bold" >Twitter</a>
+                    <a href="https://www.instagram.com" className="hover:text-white hover:text-bold" >Instagram</a>
+                    <a href="https://www.webflow.com" className="hover:text-white hover:text-bold" >Webflow</a>
                 </div>
             </div>
         </div>
